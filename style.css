@@ -1,0 +1,95 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+#background {
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+}
+
+#perfumePic {
+    width: 350px;
+    height: auto;
+}
+
+#text {
+    display: grid;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 325px;
+    grid-template-rows: 30px 100px 1fr 1fr 50px;
+}
+
+#perfume {
+    vertical-align: bottom;
+    padding-top: 6px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
+
+#title {
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: 'Fraunces', serif;
+}
+
+#para {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#fourty {
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+#button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 12px;
+}
+
+@media (min-width: 375px){
+    #background {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 1fr;
+        border-radius: 25px;
+                
+    }
+    .attribution {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #text {
+        grid-column-start: 2;
+        background-color: hsl(0, 0%, 100%);
+        padding-left: 30px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-rows: 30px 150px 1fr 1fr 50px;
+
+    }
+
+    #sixty {
+        text-decoration: line-through;
+    }
+    #title{
+        padding-right: 90px;
+        
+    }
+    #para {
+        padding-right: 50px;
+    }
+
+    #numbers {
+        padding-top: 50px;
+    }
+}
